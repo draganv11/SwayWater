@@ -1,0 +1,507 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700);
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans+Mono);
+@import url(https://fonts.googleapis.com/css?family=Karla:400,700);
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+ol {
+    list-style-type: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+.hidden {
+	display: hidden;
+}
+
+.clear {
+	clear: both;
+}
+
+/* --------------- FLOAT ---------------- */
+
+#floating {
+	width: 70%;
+	position: fixed;
+	z-index: -5;
+	left: 15%;
+}
+
+.float1 {
+	display: inline-block;
+	float: left;
+}
+
+.float2 {
+	display: inline-block;
+	float: right;
+}
+
+@keyframes plutanje {
+	from {
+		transform: rotate(0deg);
+		left: 0px; top: 0px;
+	}
+	to {
+		transform: rotate(360deg);
+		left: 0px; top: 500px;
+	}
+}
+
+.rotate {
+	animation-name: plutanje; 
+	position: relative;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: ease-in-out;
+}
+
+#pageTop {
+	background-image: url(images/gb_naslovna.jpg);
+	height: 230vh;
+}
+
+.pageTopPos {
+	background-position: 0px 768px;
+}
+
+.topFixed {
+	background-attachment: fixed;
+}
+
+.curtain {
+	height: 130vh;
+	position: relative;
+	z-index: 10;
+	transform: translate(0%, -25%);
+	padding-top: 50px; 
+}
+
+.shapes {
+	height: 100%;
+	width: 100%;
+	background-image: url(images/drip.svg);
+	background-size: 135px;
+}
+
+.naslov {
+	visibility: hidden;
+}
+
+
+.naslovOn {
+	visibility: initial;
+	position: relative;
+	top: 30%;
+	z-index: 60;
+	font-family: "Montserrat";
+	font-size: 8em;
+	text-transform: uppercase;
+	color: #fff;
+	text-align: center;
+}
+
+.naslovFixed {
+	position: fixed;
+	top: 45%;
+	left: 20%;
+}
+
+.logo {
+	z-index: 50;
+	width: 50%;
+	position: relative;
+	top: 15%;
+	left: 25%;
+	text-align: center;	
+}
+
+.logo img {
+	width: 286px;
+	height: 103px;
+}
+
+.pageTopUnfixed {
+	background-image: url(images/gb_naslovna.jpg);
+	height: 230vh;
+	position: relative;
+	top: -700%;
+}
+
+#spacer {
+	width: 100%;
+	height: 80px;
+}
+
+#navBar {
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	background-color: white;
+	opacity: 0.8;
+}
+
+#navBar li a {
+	text-decoration: none;
+	color: #29353A;
+}
+
+#navBar li {
+	display: inline-block;
+	font-family: "Karla";
+	font-size: 1em;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding: 20px 30px;
+	letter-spacing: 1px;
+}
+
+#navBar li a:hover {
+	border-bottom: 2px solid #29353A;
+}
+
+.sticky {
+	top: 0;
+	position: fixed;
+	z-index: 50;
+	margin: auto;
+	box-shadow: 5px 0px 10px #29353A;
+}
+
+
+#sway {
+	margin: 100px;
+}
+
+#sway h2 {
+	text-transform: uppercase;
+	font-size: 1.1em;
+	font-family: "Karla";
+	text-align: center;
+	color: #29353A;
+	letter-spacing: 2px;
+}
+
+#sway p {
+	width: 45%;
+	margin: 30px auto;
+	font-size: 1.8em;
+	font-family: "Karla";
+	text-align: center;
+	color: #29353A;
+	letter-spacing: 2px;
+}
+
+
+#flavors h2 {
+	text-transform: uppercase;
+	font-size: 1.1em;
+	font-family: "Karla";
+	text-align: center;
+	color: #29353A;
+	letter-spacing: 2px;
+}
+
+.flavorsList {
+	width: 90%;
+	margin: auto;
+	text-align: center;
+}
+
+.flavorsList li{
+	display: inline-block;
+	margin: 10px;
+	width: 38%;
+	vertical-align: top;
+}
+
+.order12Button {
+	display: inline-block;
+	cursor: pointer;
+	width: 40%;
+	margin: auto;
+	margin-top: 20px;
+	background-color: white;
+	font-family: "Karla";
+	font-weight: 700;
+	font-size: 1em;
+	text-transform: uppercase;
+	text-align: center;
+	text-decoration: none;
+	padding: 15px;
+}
+
+.order12Button a {
+	color: #29353A;
+}
+
+.order12Button:hover {
+	background-color: #29353A;
+	color: white;
+}
+
+.order12Button a:hover {
+	color: white;
+}
+
+#flavorsArticle1 {
+	background-color: #E1F6B4;
+	background-image: url(images/shapes-cucumber.png);
+	background-size: 565px 401px;
+	background-repeat: no-repeat;
+	background-position: 0% -5%;
+	height: 600px;
+	margin-top: 30px;
+	border: 1px solid #E1F6B4;
+}
+
+#fa1 {
+	margin: 30px auto 20px auto;
+	background-image: url(images/product-cucumber.jpg);
+	background-position: center;
+	height: 300px;
+	width: 300px;
+	border-radius: 50%;	
+}
+
+#flavorsArticle1 h3 {
+	font-size: 2em;
+	font-family: "Playfair Display";
+}
+
+#flavorsArticle1 p {
+	width: 60%;
+	margin: auto;
+	font-size: 0.9em;
+	font-family: "Droid Sans Mono";
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	line-height: 2;
+	margin-top: 10px;
+}
+
+#flavorsArticle2 {
+	background-color: #F8F49E;
+	background-image: url(images/shapes-lemon.png);
+	background-size: 360px 160px;
+	background-repeat: no-repeat;
+	background-position: 0% 52%;
+	height: 600px;
+	margin-top: 30px;
+	border: 1px solid #F8F49E;
+}
+
+#fa2 {
+	margin: 30px auto 20px auto;
+	background-image: url(images/product-lemon.jpg);
+	background-position: center;
+	height: 300px;
+	width: 300px;
+	border-radius: 50%;	
+}
+
+#flavorsArticle2 h3 {
+	font-size: 2em;
+	font-family: "Playfair Display";
+}
+
+#flavorsArticle2 p {
+	width: 60%;
+	margin: auto;
+	font-size: 0.9em;
+	font-family: "Droid Sans Mono";
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	line-height: 2;
+	margin-top: 10px;
+}
+
+#flavorsArticle3 {
+	background-color: #FEDFC0;
+	background-image: url(images/shapes-grapefriut.png);
+	background-size: 557px 363px;
+	background-repeat: no-repeat;
+	background-position: 70% 140%;
+	height: 600px;
+	margin-top: 30px;
+	border: 1px solid #FEDFC0;
+}
+
+#fa3 {
+	margin: auto;
+	background-image: url(images/product-grapefruit.jpg);
+	background-position: center;
+	height: 300px;
+	width: 300px;
+	margin-top: 30px;
+	border-radius: 50%;	
+}
+
+#flavorsArticle3 h3 {
+	font-size: 2em;
+	font-family: "Playfair Display";
+}
+
+#flavorsArticle3 p {
+	width: 60%;
+	margin: auto;
+	font-size: 0.9em;
+	font-family: "Droid Sans Mono";
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	line-height: 2;
+	margin-top: 10px;
+}
+
+#flavorsArticle4 {
+	background-color: #DBE0D9;
+	background-image: url(images/shapes-straw.png);
+	background-size: 556px 401px;
+	background-repeat: no-repeat;
+	background-position: -60% 10%;
+	height: 600px;
+	margin-top: 30px;
+	border: 1px solid #DBE0D9;
+}
+
+
+#flavorsArticle4 h3 {
+	font-size: 2em;
+	font-family: "Playfair Display";
+	margin-top: 50px;
+	padding: 30px;
+}
+
+#flavorsArticle4 p {
+	width: 60%;
+	margin: auto;
+	font-size: 0.9em;
+	font-family: "Droid Sans Mono";
+	letter-spacing: 2px;
+	line-height: 2;
+	margin-top: 10px;
+}
+
+#newsletterSignup {
+	display: inline-block;
+	cursor: pointer;
+	width: 40%;
+	margin: auto;
+	margin-top: 20px;
+	background-color: white;
+	font-family: "Karla";
+	font-weight: 700;
+	font-size: 1em;
+	text-transform: uppercase;
+	text-align: center;
+	text-decoration: none;
+	padding: 15px;
+}
+
+#newsletterSignup a {
+	color: #29353A;
+}
+
+
+#newsletterSignup:hover {
+	background-color: #29353A;
+	color: white;
+}
+
+#newsletterSignup a:hover {
+	color: white;
+}
+
+#freshOrganic {
+	background-image: url(images/freshOrganic.jpg);
+	background-position: center;
+	margin-top: 50px;
+}
+
+#freshOrganic h1 {
+	width: 70%;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+	font-family: "Montserrat";
+	font-size: 9em;
+	text-transform: uppercase;
+	padding: 150px 0px;
+	line-height: 1;
+}
+
+#process {
+	margin-top: 60px;
+}
+
+#process h2 {
+	text-transform: uppercase;
+	font-size: 1.1em;
+	font-family: "Karla";
+	text-align: center;
+	color: #29353A;
+	letter-spacing: 2px;
+}
+
+#processList {
+	width: 90%;
+	margin: auto;
+	margin-top: 30px;
+	text-align: center;
+}
+
+#processList li {
+	display: inline-block;
+	width: 40%;
+	margin: 10px;
+}
+
+.paNumber {
+	font-size: 11em;
+	color: #FEDFC0;
+	font-family: "Montserrat";
+	position: relative;
+	left: -10%;
+}
+
+.processArticle h3 {
+	text-transform: uppercase;
+	font-size: 1.1em;
+	font-family: "Karla";
+	text-align: center;
+	color: #29353A;
+}
+
+.processArticle p {
+	width: 60%;
+	margin: 30px auto;
+	font-size: 1.1em;
+	font-family: "Karla";
+	text-align: center;
+	color: #29353A;
+	line-height: 2;
+	position: relative;
+}
+
+.paText {
+	position: relative;
+	margin-top: -150px;
+}
+
